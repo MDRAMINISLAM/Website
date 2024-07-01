@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: #232323;
+    color: #fff;
+}
+
+.custom-navbar {
+    background-color: none;
+}
+
+.custom-navbar .custom-navbar-brand {
+    color: #D82934;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.custom-navbar .custom-navbar-brand:hover {
+    color: white;
+    transform: scale(1.1); /* Slightly enlarge the text */
+}
+
+.custom-navbar .nav-item .custom-navbar-link {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    position: relative;
+}
+
+.custom-navbar .nav-item .custom-navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #D82934;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-item .custom-navbar-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #D82934;
+}
+
+.custom-navbar .nav-item .custom-navbar-link:hover {
+    color: #D82934;
+    font-size: 20px;
+}
+
+.container {
+    margin: auto;
+}
+.about{
+    margin-top: 50px;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0px 0px 1000px 50px #D82934;
+    z-index: -100;
+}   
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+
+header {
+    position: relative;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header h4 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #D82934;
+    font-weight: bolder;
+
+}
+
+.profession {
+    color: #523739;
+    font-size: 19px;
+}
+.motive {
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1)
+}
+
+.features {
+    margin-top: 50px;
+}
+
+.content-f h1{
+    font-size: 50px;
+    color: #D82934;
+    line-height: 60px;
+}
+
+.desc-e {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.desc-f {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+/* Custom CSS for card styling */
+.custom-card {
+    background-color: #1D1D1D;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.custom-card .card-body {
+    padding: 20px;
+}
+
+.custom-card .card-title {
+    color: #ffffff;
+}
+
+.custom-card .card-text {
+    color: #cccccc;
+}
+
+.card-body i{
+    color:#D82934;
+}
+
+.custom-card {
+    width: 400px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.custom-card .card-title{
+    margin-top: 20px;
+    color :#D82934;
+    font-size:20px;
+}
+
+.custom-card .card-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.custom-card:hover {
+    transform: scale(1.1); /* Slightly enlarge the card on hover */
+    border: 1px solid #D82934; /* Add border style */
+}
+
+.abt {
+    color:#D82934;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.cat-t,
+.cat-i {
+    font-size: 20px;
+    line-height:40px;
+}
+
+.cat-t {
+    color: #D82934;
+}
+
+.profile-info {
+    border-top:#D82934;
+    border-bottom:#D82934;
+    border-right: transparent;
+    border-left: transparent;
+    border-style: solid;
+}
+
+.education {
+    padding: 50px;
+}
+
+.edu-title {
+    color: #D82934;
+    font-size: 50px;
+}
+
+.edu-current {
+    font-size: 25px;
+    color: #D82934;
+}
+
+.edu-info {
+    border-top: #D82934;
+    border-bottom: #D82934;
+    border-left: transparent;
+    border-right: transparent;
+    border-style: solid;
+}
+
+.skills-title {
+    color: #D82934;
+    font-size: 50px;
+}
+
+.custom-card-u {
+    padding-top: 10px;
+    background-color: #1D1D1D;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: 0.3s;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    height: 200px; /* Set a fixed height for cards */
+}
+
+.custom-card-u:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    border: #D82934 1px solid; /* Add border style */
+    border-radius: 10px;
+}
+.custom-card-u h1 {
+    font-size: 90px;
+    color: #D82934;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #D82934;
+}
+.custom-card-p {
+    padding-top: 10px;
+    background-color: #1D1D1D;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: 0.3s;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    height: 200px; /* Set a fixed height for cards */
+}
+
+.custom-card-p:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    border: #D82934 1px solid; /* Add border style */
+    border-radius: 10px;
+    -webkit-text-stroke: #D82934 1px;
+    -webkit-text-fill-color: transparent;
+}
+.custom-card-p h1 {
+    font-size: 40px;
+    color: #D82934;
+
+}
+
+.form-label {
+    font-size: 20px;
+    color: #D82934;
+}
+
+.enter {
+    background-color: #1D1D1D;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: 0.3s;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    border: none;
+}
+
+.enter:focus, .form-select:focus, textarea:focus {
+    border-color: #D82934; /* Change border color */
+    box-shadow: 0 0 5px rgba(216, 41, 52, 0.5); /* Add a subtle shadow */
+    background-color: gray;
+    color: white;
+    outline: none; /* Remove default outline */
+    border: none
+}
+.btn {
+    background-color : #1D1D1D;
+    color:white;
+    transition: 0.3s;
+    border: none;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #D82934;
+}
+
+.social i{
+    color: #D82934;
+}
+
+.social a{
+    text-decoration: none;
+}
